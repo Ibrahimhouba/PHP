@@ -1,0 +1,2 @@
+[group1]
+slave ansible_host=192.168.40.132 ansible_user=adm1
