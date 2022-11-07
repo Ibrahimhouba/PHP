@@ -6,6 +6,6 @@
   roles:
    - php
    - httpd       
-   - MariaDB
+   #- MariaDB
    - postgres
    - deploy
