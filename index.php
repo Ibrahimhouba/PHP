@@ -2,8 +2,9 @@
 <center><html>
   <body>
 	<form method="post" action="process.php">
+		<img src="https://imageio.forbes.com/specials-images/imageserve/60f1e792c7e89f933811814c/DevOps-concept/960x0.jpg?format=jpg&width=960" alt="Simply Easy Learning" width="220" height="150">
 		<title>Formation DEVOPS</title>
-                <h2> :) Bonjour sur fromation DEVOS :)</h2>
+                <h1 style="background-color:rgba(255, 99, 71, 0.5);">Formation DEVOPS</h1>
 		First name:<br>
 		<input type="text" name="first_name" size="40">
 		<br>
