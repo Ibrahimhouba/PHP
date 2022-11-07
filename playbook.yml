@@ -4,8 +4,8 @@
   become: yes
 
   roles:
-          #- php
-     # - httpd       
-     #- MariaDB
+   - php
+   - httpd       
+   - MariaDB
    - postgres
    - deploy
