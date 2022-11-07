@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <center><html>
-  <body>
+  <body style="background-color:SkyBlue;">
 	<form method="post" action="process.php">
 		<img src="https://imageio.forbes.com/specials-images/imageserve/60f1e792c7e89f933811814c/DevOps-concept/960x0.jpg?format=jpg&width=960" alt="Simply Easy Learning" width="220" height="150">
 		<title>Formation DEVOPS</title>
