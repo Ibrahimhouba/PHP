@@ -3,7 +3,7 @@
   <body>
 	<form method="post" action="process.php">
 		<title>Formation DEVOPS</title>
-                <h2> :) Bonjour sur fromation DEVPS :)</h2>
+                <h2> :) Bonjour sur fromation DEVOS :)</h2>
 		First name:<br>
 		<input type="text" name="first_name" size="40">
 		<br>
