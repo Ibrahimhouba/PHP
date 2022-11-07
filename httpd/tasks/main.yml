@@ -1,0 +1,40 @@
+---
+# tasks file for httpd
+# # tasks file for httpd
+
+- name: Apache latest version installation
+  dnf:
+    name: httpd
+    state: latest
+
+
+- name: Start and enable firewalld
+  service:
+    name: firewalld
+    state: started
+    enabled: yes
+
+
+    #- name: Create firewall rule for apache service
+    # firewalld:
+    #port: "80/tcp"
+    #permanent: true
+    #state: enabled
+    #immediate: yes
+
+- name: FirewallD rules
+  firewalld:
+    permanent: yes
+    immediate: yes
+    service: "{{ item }}"
+    state: enabled
+  with_items:
+    - http
+    - https
+
+- name: Enable service to start on boot up
+  service:
+    name: httpd
+    state: started
+  notify: restart httpd
+   

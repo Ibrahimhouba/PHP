@@ -1,0 +1,6 @@
+---
+# handlers file for httpd
+- name: reload_httpd
+  systemd:
+          name: httpd
+          state: reloaded

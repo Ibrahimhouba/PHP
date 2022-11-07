@@ -1,0 +1,7 @@
+---
+# defaults file for postgres
+
+db_user: "omega"
+db_password: "omega"
+db_name: "omega"
+

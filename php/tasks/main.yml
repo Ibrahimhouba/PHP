@@ -1,0 +1,27 @@
+---
+# tasks file for php
+- name: installer PHP
+  dnf:
+    name:
+     - php
+     - php-mysqlnd 
+     - php-pgsql
+
+    state: present
+
+- name: Ajouter user "apache"
+  user: name=apache group=apache createhome=yes
+  become: true 
+
+- name: Changer propriétaire et groupe pour le repertoire
+  file: path=/var/www/html
+     owner=apache
+     group=apache
+     state=directory
+     recurse=yes
+
+# Verification pour php
+- name: ajouter site de php
+  template:
+    src: templates/info.php.j2
+    dest: /var/www/html/info.php
