@@ -25,9 +25,9 @@
   <body><center>
 
 <?php
-$user = "omega";
-$password = "omega";
-$database = "omega";
+$user = "caux";
+$password = "caux";
+$database = "caux";
 $table = "employee";
 
 try {
