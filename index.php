@@ -25,14 +25,14 @@
   <body><center>
 
 <?php
-$user = "caux";
-$password = "caux";
-$database = "caux";
+$user = "omega";
+$password = "omega";
+$database = "omega";
 $table = "employee";
 
 try {
 
-        $db= new PDO("pgsql:host=192.168.40.132;dbname=$database", $user, $password);
+        $db= new PDO("pgsql:host=192.168.193.139;dbname=$database", $user, $password);
 
   foreach($db->query("SELECT * FROM $table") as $row) {
 
