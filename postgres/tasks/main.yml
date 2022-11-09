@@ -60,10 +60,10 @@
       postgresql_table:
        db: "{{ db_name }}"
        owner: "{{ db_user }}"
-       name: emlpoyee
+       name: employee
        columns:
        - first_name VARCHAR(20)
-       - last_name VARCHAR(2)
+       - last_name VARCHAR(20)
        - city_name VARCHAR(20)
        - email VARCHAR(20)
       become_user: postgres
